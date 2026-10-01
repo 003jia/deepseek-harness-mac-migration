@@ -1,0 +1,12 @@
+{
+  "en": {
+    "summary": "The memory plugin records the exact auxiliary extraction request and its outcome in two new log-only Session events. It also identifies memory-produced user messages with an attribution-only source kind.",
+    "compatibility": "Existing format 4 records retain their types and replay behavior. Readers that do not mount the memory plugin preserve a known memory source as recorded content without using it for validation or authority. Older builds without the new event declarations can reject logs containing memory extraction events; the new events do not alter the message surface or existing event payloads. The local memory store has its own domain version and does not change the Session header.",
+    "verification": "The persistence classifier reports four attribution-kind additions and two ordinary event additions, all allowed at the same Session version. The history check passes for 64 roots and seven records. The full documentation run has one remaining Windows site-test failure because this host denies temporary symbolic-link creation."
+  },
+  "zh": {
+    "summary": "记忆插件用两个新增的仅日志 Session 事件记录辅助提取请求的准确输入及结果，并用仅用于归属标识的来源类别标记记忆生成的 user 消息。",
+    "compatibility": "既有格式 4 记录的类型和回放行为保持不变。未加载记忆插件的读取器会保留已记录的记忆来源内容，但不会据此验证消息或赋予权限。缺少新增事件声明的旧版本可能拒绝含有记忆提取事件的日志；新增事件不改变消息表面或既有事件载荷。本地记忆存储有独立的域版本，不改变 Session 头。",
+    "verification": "持久化分类器报告四处仅用于归属标识的来源类别新增和两个普通事件新增，均允许维持当前 Session 版本。历史检查通过，覆盖 64 个类型根和 7 条记录。完整文档检查中仍有一项 Windows 站点测试失败，因为此主机拒绝创建临时符号链接。"
+  }
+}

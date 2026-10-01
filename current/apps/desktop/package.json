@@ -1,0 +1,16 @@
+{
+  "name": "@deepseek-ai/dsh-desktop",
+  "description": "DeepSeek Harness desktop client: an Electron shell that boots the repository's own `dsh web` server and shows the served UI in a native window.",
+  "version": "0.1.0-rc.8",
+  "private": true,
+  "type": "module",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "start:no-sandbox": "electron . --no-sandbox --disable-gpu"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^44.0.0"
+  }
+}

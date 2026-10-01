@@ -1,0 +1,162 @@
+/* Glassmorphism control variables. The skin center plugin writes them onto
+   the document root from the durable ui-skin-center settings; frame surfaces
+   below read them for the frosted look. These fallbacks equal the plugin's
+   persisted defaults, so a page renders identically before it loads. */
+:root {
+  --dsw-glass-opacity: 85%;
+  --dsw-glass-blur: 12px;
+}
+
+.frame {
+  position: relative; /* anchors the drag handles, which straddle column borders */
+  display: grid;
+  grid-template-rows: 100%;
+  height: 100%;
+  overflow: hidden;
+  /* A soft mesh sits behind the glass panels so transparency is visible. */
+  background:
+    radial-gradient(circle at 0% 0%, rgba(65, 118, 230, 0.14), transparent 45%),
+    radial-gradient(circle at 100% 0%, rgba(34, 197, 94, 0.08), transparent 40%),
+    radial-gradient(circle at 80% 100%, rgba(245, 158, 11, 0.08), transparent 40%),
+    var(--dsw-alias-bg-base);
+  /* Collapse/expand animates the tracks on the deepsuite sider curve
+     (--ds-ease-in-out / --ds-transition-duration-slow, ui-theme base.css). */
+  transition: grid-template-columns var(--ds-transition-duration-slow) var(--ds-ease-in-out);
+}
+
+body[data-ds-dark-theme] .frame {
+  background:
+    radial-gradient(circle at 0% 0%, rgba(65, 118, 230, 0.18), transparent 45%),
+    radial-gradient(circle at 100% 0%, rgba(34, 197, 94, 0.10), transparent 40%),
+    radial-gradient(circle at 80% 100%, rgba(245, 158, 11, 0.10), transparent 40%),
+    var(--dsw-alias-bg-base);
+}
+
+/* A skin-center custom background paints under the whole app (the plugin's
+   fixed body layer); the mesh gradient yields so the two never stack. */
+body[data-dsh-skin-bg] .frame,
+body[data-ds-dark-theme][data-dsh-skin-bg] .frame,
+body[data-dsh-wallpaper] .frame,
+body[data-ds-dark-theme][data-dsh-wallpaper] .frame {
+  background: transparent;
+}
+
+/* Dragging writes widths at pointer cadence; easing them would detach the
+   column from the handle. */
+.frame[data-dragging] {
+  transition: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .frame {
+    transition: none;
+  }
+}
+
+.sidebarCol {
+  min-width: 0;
+  overflow: hidden;
+  background: color-mix(in srgb, var(--dsw-specific-sidebar-fill) var(--dsh-sidebar-opacity, var(--dsw-glass-opacity)), transparent);
+  border-right: 1px solid color-mix(in srgb, var(--dsw-alias-border-l1) 50%, transparent);
+  backdrop-filter: blur(var(--dsw-glass-blur));
+  /* The frosted edge catches a thin highlight on light themes. */
+  box-shadow: inset -1px 0 0 rgba(255, 255, 255, 0.04);
+}
+
+.centerCol {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  /* Glass over the mesh background like the flanking columns, so the
+     user-tuned transparency shows through the conversation pane too. */
+  background: color-mix(in srgb, var(--dsw-alias-bg-layer-1) var(--dsh-pane-opacity, var(--dsw-glass-opacity)), transparent);
+  backdrop-filter: blur(var(--dsw-glass-blur));
+}
+
+.detailsCol {
+  min-width: 0;
+  overflow: hidden;
+  background: color-mix(in srgb, var(--dsw-alias-bg-layer-2) var(--dsh-pane-opacity, var(--dsw-glass-opacity)), transparent);
+  border-left: 1px solid color-mix(in srgb, var(--dsw-alias-border-l2) 50%, transparent);
+  backdrop-filter: blur(var(--dsw-glass-blur));
+  box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.04);
+}
+
+/* The details subtree stays mounted at zero width, so its border must not paint
+   a 1px seam. The collapsed sidebar instead retains a bordered compact rail. */
+.frame[data-details-collapsed] .detailsCol {
+  border-left: none;
+}
+
+/* Drag handles are frame children (columns clip overflow): an 8px hit strip
+   centered on the column border via inline left, above column content. Details
+   adds a visible 12x32 pill at vertical center; sidebar keeps only the hit strip. */
+.handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 8px;
+  margin-left: -4px;
+  cursor: col-resize;
+  z-index: 2;
+  touch-action: none;
+  /* Rides the same curve as the tracks so the pill stays on the moving
+     border during collapse/expand; paused while dragging (frame rule). */
+  transition: left var(--ds-transition-duration-slow) var(--ds-ease-in-out);
+}
+
+.frame[data-dragging] .handle {
+  transition: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .handle {
+    transition: none;
+  }
+}
+
+.handle[data-side='details']::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 32px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background: color-mix(in srgb, var(--dsw-alias-button-floating-fill) var(--dsw-glass-opacity), transparent);
+  border: 1px solid color-mix(in srgb, var(--dsw-alias-border-l2-darkmode-thin) 60%, transparent);
+  backdrop-filter: blur(calc(var(--dsw-glass-blur) * 0.5));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  /* Hover affordance: the details pill hides until the pointer is over its
+     column, the strip itself, or a drag. */
+  opacity: 0;
+  transition:
+    opacity var(--ds-transition-duration-slow) var(--ds-ease-in-out),
+    background var(--ds-transition-duration-slow) var(--ds-ease-in-out);
+}
+
+.detailsCol:hover ~ .handle[data-side='details']::after,
+.handle[data-side='details']:hover::after,
+.handle[data-side='details'][data-dragging='true']::after {
+  opacity: 1;
+}
+
+.handle[data-side='details']:hover::after,
+.handle[data-side='details'][data-dragging='true']::after {
+  background: color-mix(in srgb, var(--dsw-alias-button-floating-hover) var(--dsw-glass-opacity), transparent);
+  border-color: color-mix(in srgb, var(--dsw-alias-border-l3) 70%, transparent);
+}
+
+.overlayLayer {
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+  pointer-events: none;
+}
+
+.overlayLayer > * {
+  pointer-events: auto;
+}

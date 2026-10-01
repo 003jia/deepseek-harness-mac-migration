@@ -1,0 +1,40 @@
+# Bilingual-pair consistency record for README.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write packages/guard/claude-loop-alignment/README.md
+/:
+  en: 55a15a3afc39c704
+  zh: 5c2a128577ff47ab
+/deepseek-ai-dsh-claude-loop-alignment:
+  en: 02f333af24dcc939
+  zh: 2473ab5f66095eff
+/deepseek-ai-dsh-claude-loop-alignment/summary:
+  en: 2ef497fe5641ab2a
+  zh: 60b155dbf2859986
+/deepseek-ai-dsh-claude-loop-alignment/table-of-contents:
+  en: 2e89ddb1e73218cb
+  zh: 5b9aa0e046408356
+/deepseek-ai-dsh-claude-loop-alignment/use-this-package:
+  en: 5edebdf17744a575
+  zh: 0ad204bb6440bebd
+/deepseek-ai-dsh-claude-loop-alignment/model-experience:
+  en: 215e7ba838619b7b
+  zh: a311da3843709f90
+/deepseek-ai-dsh-claude-loop-alignment/model-experience/loop-controls-and-tools:
+  en: 853d137f119d5ebf
+  zh: f2ce801d96ae9cba
+/deepseek-ai-dsh-claude-loop-alignment/model-experience/loop-controls-and-tools/what-the-model-sees:
+  en: a9172190e62176f4
+  zh: d1f77e2e51378141
+/deepseek-ai-dsh-claude-loop-alignment/model-experience/loop-controls-and-tools/token-effect:
+  en: 5a527a792bd0ebfe
+  zh: ad582e87e2180031
+/deepseek-ai-dsh-claude-loop-alignment/model-experience/loop-controls-and-tools/kv-cache-effect:
+  en: 6e0c70398c96fcfd
+  zh: a1aafcd022d8f4a2
+/deepseek-ai-dsh-claude-loop-alignment/known-limitations-and-deferred-work:
+  en: 0067f0f0183e408a
+  zh: 9ba9d614e0685e12
+/deepseek-ai-dsh-claude-loop-alignment/known-limitations-and-deferred-work/dev-note:
+  en: c720ae1f7cc36e59
+  zh: 03e0fcbd1dbd1b8f

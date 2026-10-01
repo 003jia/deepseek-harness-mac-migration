@@ -1,0 +1,19 @@
+# Bilingual-pair consistency record for 2026-09-29-local-desktop-directory.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write .agents/notes/implemented/process/2026-09-29-local-desktop-directory.md
+/agent-note-build-a-local-windows-desktop-directory-without-release-tooling:
+  en: b1fcd906596f8f31
+  zh: c346c137b48e043c
+/agent-note-build-a-local-windows-desktop-directory-without-release-tooling/problem:
+  en: 1cd29c77923e3c3b
+  zh: 4cf14b12e17a7a4d
+/agent-note-build-a-local-windows-desktop-directory-without-release-tooling/decision:
+  en: 6e84df85171c7b96
+  zh: 842babd8aa65b5a6
+/agent-note-build-a-local-windows-desktop-directory-without-release-tooling/alternatives-considered:
+  en: 8ded8013c1da7013
+  zh: 00144f2f92b7b58e
+/agent-note-build-a-local-windows-desktop-directory-without-release-tooling/consequences:
+  en: 0574c4ee68c872b6
+  zh: a790e6d546620d0b

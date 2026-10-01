@@ -1,0 +1,19 @@
+# Bilingual-pair consistency record for 2026-09-28-claude-loop-web-launcher.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write .agents/notes/implemented/feature/2026-09-28-claude-loop-web-launcher.md
+/agent-note-claude-loop-controls-and-web-desktop-launcher:
+  en: cd4d4c4a5cdd4cc7
+  zh: 42486ae32d4dedca
+/agent-note-claude-loop-controls-and-web-desktop-launcher/problem:
+  en: 350abc9e55c1977d
+  zh: 7e689011abbecc60
+/agent-note-claude-loop-controls-and-web-desktop-launcher/decision:
+  en: 7cb1f702788d37cd
+  zh: 7edd24fa7a7d27d7
+/agent-note-claude-loop-controls-and-web-desktop-launcher/alternatives-considered:
+  en: c7aed641bfcbbd4f
+  zh: fdee2fdfdd24e0c4
+/agent-note-claude-loop-controls-and-web-desktop-launcher/consequences:
+  en: 21db6279aaf43d28
+  zh: 422985aedcd79672

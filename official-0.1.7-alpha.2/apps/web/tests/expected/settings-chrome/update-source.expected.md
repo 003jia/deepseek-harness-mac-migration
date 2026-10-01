@@ -1,0 +1,17 @@
+- region "检查 DeepSeek Harness 更新":
+  - heading "检查 DeepSeek Harness 更新" [level=3]
+  - paragraph: 更新信息仅来自 DeepSeek Harness 官方发布
+  - button "重新检查"
+  - status:
+    - paragraph: 发现新版本
+    - paragraph: 可在官方发布页查看发行说明与安装方式。
+  - term: 当前版本
+  - definition: 0.1.7-alpha.2
+  - term: 官方最新版本
+  - definition: 9.0.0
+  - term: 发布时间
+  - definition: {{timestamp}}
+  - button "更新 DeepSeek Harness 源码"
+  - link "查看官方发布":
+    - /url: https://github.com/deepseek-ai/deepseek-harness/releases/tag/dsh-v9.0.0
+  - status: 新版源码已准备好，请在新目录安装依赖并运行构建： /dsh-upgrades/upgrade-9.0.0

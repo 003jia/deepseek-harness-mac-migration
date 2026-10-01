@@ -1,0 +1,20 @@
+- region "记忆":
+  - strong: 启用 Memory
+  - paragraph: 在对话中使用已保存的记忆并开启 Memory 提示词。关闭后，自动和手动提取均不生效，但会保留自动提取设置及已保存的记忆。
+  - switch "启用 Memory 在对话中使用已保存的记忆并开启 Memory 提示词。关闭后，自动和手动提取均不生效，但会保留自动提取设置及已保存的记忆。" [checked]
+  - strong: 启用 Memory 自动提取
+  - paragraph: 自动从对话中提取并保存记忆。关闭此项后，仍可使用已有记忆和手动提取记忆。
+  - paragraph: 依赖「启用 Memory」。
+  - switch "启用 Memory 自动提取 自动从对话中提取并保存记忆。关闭此项后，仍可使用已有记忆和手动提取记忆。 依赖「启用 Memory」。" [checked]
+  - paragraph: 记忆保存在本地；提取使用当前会话配置的模型。
+  - button "刷新"
+  - text: 选择会话
+  - combobox "选择会话" [disabled]
+  - button "提取所选会话" [disabled]
+  - text: 记忆内容
+  - textbox "记忆内容"
+  - text: 项目路径（留空为用户共享记忆）
+  - textbox "项目路径（留空为用户共享记忆）"
+  - button "保存记忆" [disabled]
+  - paragraph: 还没有保存的记忆
+  - list

@@ -1,0 +1,13 @@
+- region "技能":
+  - heading "技能" [level=2]
+  - paragraph: 添加本地技能目录。停用只会取消注册，不会删除原始文件。
+  - paragraph: 保存后，本机 Host 会尝试启用此能力。
+  - text: 名称
+  - textbox "名称"
+  - text: 配置（JSON）
+  - textbox "配置（JSON）": "{ \"directory\": \"/absolute/path/to/skills\" }"
+  - paragraph: 只填配置数据；密钥填写凭据引用名称，不要粘贴密钥。
+  - group: 查看配置示例
+  - button "保存" [disabled]
+  - paragraph: 尚未管理此类能力。
+  - list

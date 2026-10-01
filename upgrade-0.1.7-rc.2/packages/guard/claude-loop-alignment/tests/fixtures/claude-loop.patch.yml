@@ -1,0 +1,32 @@
+- id: headless-startup
+  disabled: true
+
+- id: headless-runner
+  disabled: true
+
+- id: agent-loop
+  config:
+    agents:
+      - id: main
+        provider: claude-loop-mock
+        model: claude-loop-mock
+        cwd: !!js process.cwd()
+
+- id: session-persistence-jsonl
+  config:
+    root: './.sessions'
+    compression: none
+
+- insert:
+    - id: claude-loop-mock-llm
+      name: './mock-llm.ts'
+    - id: claude-loop-mock-tool
+      name: './mock-tool.ts'
+    - id: claude-loop-alignment
+      name: '@deepseek-ai/dsh-claude-loop-alignment'
+      config:
+        maxToolTurns: 1
+        snipAtRatio: 0
+        compactAtRatio: 0
+        turnTokenBudget: 0
+        maxTokensRecoveryLimit: 0

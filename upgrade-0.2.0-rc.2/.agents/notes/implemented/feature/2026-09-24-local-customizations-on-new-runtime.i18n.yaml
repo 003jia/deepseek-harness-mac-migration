@@ -1,0 +1,22 @@
+# Bilingual-pair consistency record for 2026-09-24-local-customizations-on-new-runtime.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write .agents/notes/implemented/feature/2026-09-24-local-customizations-on-new-runtime.md
+/agent-note-local-customizations-on-the-current-runtime:
+  en: f6fab76a1094e5c4
+  zh: c8411fb55293a2d0
+/agent-note-local-customizations-on-the-current-runtime/problem:
+  en: 1e5de48a5d6245a8
+  zh: 3d588ffa37b40105
+/agent-note-local-customizations-on-the-current-runtime/decision:
+  en: 48925af08686ff7f
+  zh: e1ed4476e413f73e
+/agent-note-local-customizations-on-the-current-runtime/alternatives-considered:
+  en: 4488c3cfdc56bca7
+  zh: 1d553972fd412fef
+/agent-note-local-customizations-on-the-current-runtime/consequences:
+  en: 07a0b0609d9256b4
+  zh: f0dfe4ebd3cdea38
+/agent-note-local-customizations-on-the-current-runtime/testing:
+  en: 696b8893cae2e56c
+  zh: 91ae241f62bae4b8

@@ -1,0 +1,58 @@
+# Bilingual-pair consistency record for README.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write packages/client/ui-settings-memory/README.md
+/:
+  en: 9b912401b76a6a74
+  zh: b6c2d1408ff967ee
+/deepseek-ai-dsh-client-ui-settings-memory:
+  en: eeacf3dbe076491a
+  zh: 82b3c099f6bdc59f
+/deepseek-ai-dsh-client-ui-settings-memory/summary:
+  en: b255e694436bdde2
+  zh: 2371e25e95ccff4d
+/deepseek-ai-dsh-client-ui-settings-memory/table-of-contents:
+  en: 274c04059510c111
+  zh: 2cb0024c32a21e7b
+/deepseek-ai-dsh-client-ui-settings-memory/details:
+  en: 59c95c9bb7ea8fb1
+  zh: 6305738996ea72cc
+/deepseek-ai-dsh-client-ui-settings-memory/dev-note:
+  en: f3b2d1b297ee1387
+  zh: 21bb910dc6a18384
+/deepseek-ai-dsh-client-ui-settings-memory/model-experience:
+  en: 215e7ba838619b7b
+  zh: a311da3843709f90
+/deepseek-ai-dsh-client-ui-settings-memory/model-experience/automatic-extraction:
+  en: 971b30822128bcbc
+  zh: 1acf7705f9ae4358
+/deepseek-ai-dsh-client-ui-settings-memory/model-experience/automatic-extraction/what-the-model-sees:
+  en: 57896b31268aa4f7
+  zh: e43c0c8333bbc250
+/deepseek-ai-dsh-client-ui-settings-memory/model-experience/automatic-extraction/what-the-model-sees/extraction-instructions:
+  en: 01706545d150ab8a
+  zh: cd78516a9501c92b
+/deepseek-ai-dsh-client-ui-settings-memory/model-experience/automatic-extraction/token-effect:
+  en: 6841e51abb95a0bc
+  zh: 30c7a9ce9e1586d4
+/deepseek-ai-dsh-client-ui-settings-memory/model-experience/automatic-extraction/kv-cache-effect:
+  en: aa40f2a8bd6cbe08
+  zh: e6cdb8ea248ff1f8
+/deepseek-ai-dsh-client-ui-settings-memory/model-experience/memory-recall:
+  en: 432b4f2aabe516e4
+  zh: 65a6ca4b1e55c273
+/deepseek-ai-dsh-client-ui-settings-memory/model-experience/memory-recall/what-the-model-sees:
+  en: 9443909e93eb3ee3
+  zh: 6c22980ecab3598d
+/deepseek-ai-dsh-client-ui-settings-memory/model-experience/memory-recall/what-the-model-sees/recall-message:
+  en: 181adf34e055301e
+  zh: 4af14359f492f222
+/deepseek-ai-dsh-client-ui-settings-memory/model-experience/memory-recall/token-effect:
+  en: 1f1056e4a4aa92ac
+  zh: 0619ede3be934b53
+/deepseek-ai-dsh-client-ui-settings-memory/model-experience/memory-recall/kv-cache-effect:
+  en: 3e0a86f6f874b46d
+  zh: bc1b9a6449bd7361
+/deepseek-ai-dsh-client-ui-settings-memory/known-limitations-and-deferred-work:
+  en: b291b505a5e7843a
+  zh: 35075ac867b7f202

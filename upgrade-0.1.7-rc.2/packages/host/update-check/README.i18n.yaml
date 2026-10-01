@@ -1,0 +1,31 @@
+# Bilingual-pair consistency record for README.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write packages/host/update-check/README.md
+/:
+  en: 752d5a26469610e3
+  zh: 92b56ec4d80497b0
+/deepseek-ai-dsh-host-update-check:
+  en: f0ff99ac7b82ffc4
+  zh: 529ea09e24538818
+/deepseek-ai-dsh-host-update-check/summary:
+  en: 256f9f4914c59eea
+  zh: 7933904055771327
+/deepseek-ai-dsh-host-update-check/table-of-contents:
+  en: 274c04059510c111
+  zh: 2cb0024c32a21e7b
+/deepseek-ai-dsh-host-update-check/details:
+  en: e25a125d484a3d65
+  zh: 694bc6690ab15a18
+/deepseek-ai-dsh-host-update-check/dev-note:
+  en: f3b2d1b297ee1387
+  zh: 21bb910dc6a18384
+/deepseek-ai-dsh-host-update-check/model-experience:
+  en: 1068efd5f587890f
+  zh: 83283033ad2861f8
+/deepseek-ai-dsh-host-update-check/model-experience/kv-cache-effect:
+  en: 4f0eadf94828e66e
+  zh: 549ab4bd42766195
+/deepseek-ai-dsh-host-update-check/known-limitations-and-deferred-work:
+  en: 656c23b48eebe4b0
+  zh: 91f533f4ef149e55

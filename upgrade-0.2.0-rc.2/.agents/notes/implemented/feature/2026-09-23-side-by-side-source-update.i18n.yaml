@@ -1,0 +1,22 @@
+# Bilingual-pair consistency record for 2026-09-23-side-by-side-source-update.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write .agents/notes/implemented/feature/2026-09-23-side-by-side-source-update.md
+/agent-note-side-by-side-source-updates:
+  en: 685df10d39db5db1
+  zh: 0c6ea90ec7fd1b24
+/agent-note-side-by-side-source-updates/problem:
+  en: 7eca0b53fa8f5679
+  zh: 1dbcc35ecb5f4e60
+/agent-note-side-by-side-source-updates/decision:
+  en: 2582d0ca6fa82d1e
+  zh: 79fa78d4ae695530
+/agent-note-side-by-side-source-updates/alternatives-considered:
+  en: 42b903fce594c717
+  zh: d8ade817c8c49f9e
+/agent-note-side-by-side-source-updates/consequences:
+  en: dbcc7027027111f7
+  zh: 91398082fe3d2ebe
+/agent-note-side-by-side-source-updates/testing:
+  en: d978dc4f97d2e355
+  zh: a588e86ec77fdffc

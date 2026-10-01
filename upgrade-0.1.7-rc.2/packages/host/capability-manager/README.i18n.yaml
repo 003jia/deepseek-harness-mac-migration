@@ -1,0 +1,43 @@
+# Bilingual-pair consistency record for README.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write packages/host/capability-manager/README.md
+/:
+  en: da29759295c651c5
+  zh: 9ead7f469d02c4e8
+/deepseek-ai-dsh-host-capability-manager:
+  en: 2dd9a8c7927fe023
+  zh: 8c23329375c7eec7
+/deepseek-ai-dsh-host-capability-manager/summary:
+  en: b4732c2cefbfa979
+  zh: 5ba1fabe651bc07a
+/deepseek-ai-dsh-host-capability-manager/table-of-contents:
+  en: 274c04059510c111
+  zh: 2cb0024c32a21e7b
+/deepseek-ai-dsh-host-capability-manager/details:
+  en: ab4c4935c61dcac9
+  zh: dd89c8b0ddc46a54
+/deepseek-ai-dsh-host-capability-manager/public-types:
+  en: 9d7b35f95926f831
+  zh: 406274ed9992fcac
+/deepseek-ai-dsh-host-capability-manager/dev-note:
+  en: f3b2d1b297ee1387
+  zh: 21bb910dc6a18384
+/deepseek-ai-dsh-host-capability-manager/model-experience:
+  en: 215e7ba838619b7b
+  zh: a311da3843709f90
+/deepseek-ai-dsh-host-capability-manager/model-experience/enabled-host-capabilities:
+  en: a356f23d35a6c9f8
+  zh: ead90bdfe70e09a3
+/deepseek-ai-dsh-host-capability-manager/model-experience/enabled-host-capabilities/what-the-model-sees:
+  en: cc085717d896026a
+  zh: ab0b8fa2e895f990
+/deepseek-ai-dsh-host-capability-manager/model-experience/enabled-host-capabilities/token-effect:
+  en: fd0784c26918b741
+  zh: cd366e88fc0eb8a4
+/deepseek-ai-dsh-host-capability-manager/model-experience/enabled-host-capabilities/kv-cache-effect:
+  en: 9206c02ae79cdf71
+  zh: c00d6959c2a1299a
+/deepseek-ai-dsh-host-capability-manager/known-limitations-and-deferred-work:
+  en: 3a1ca214c711b259
+  zh: 48bae65b42ba258f

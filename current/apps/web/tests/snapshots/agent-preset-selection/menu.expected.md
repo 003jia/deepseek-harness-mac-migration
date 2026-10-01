@@ -1,0 +1,6 @@
+- menu:
+  - menuitem "Plan"
+  - menuitem "Auto":
+    - text: Auto
+    - img
+  - menuitem "Full autonomy"

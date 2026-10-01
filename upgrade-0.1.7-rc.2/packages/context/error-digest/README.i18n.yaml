@@ -1,0 +1,40 @@
+# Bilingual-pair consistency record for README.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write packages/context/error-digest/README.md
+/:
+  en: 4f04a99637ecaac6
+  zh: 1c8d03d5ee705660
+/deepseek-ai-dsh-error-digest:
+  en: 2f2b87fd64490366
+  zh: 4875182151a019c5
+/deepseek-ai-dsh-error-digest/summary:
+  en: 45984f5652758f2a
+  zh: a0e7a7ef34fcf1a9
+/deepseek-ai-dsh-error-digest/table-of-contents:
+  en: 2e89ddb1e73218cb
+  zh: d71e86d7a617fa53
+/deepseek-ai-dsh-error-digest/use-this-package:
+  en: edeffeedb169c790
+  zh: cb52a3e145d9d175
+/deepseek-ai-dsh-error-digest/model-experience:
+  en: 215e7ba838619b7b
+  zh: a311da3843709f90
+/deepseek-ai-dsh-error-digest/model-experience/recent-tool-errors:
+  en: 05e6a76b5c3ffe19
+  zh: 525084ca885c5af1
+/deepseek-ai-dsh-error-digest/model-experience/recent-tool-errors/what-the-model-sees:
+  en: f85b62ab444fa248
+  zh: 53386c592277475c
+/deepseek-ai-dsh-error-digest/model-experience/recent-tool-errors/token-effect:
+  en: c03fb965d051fcf7
+  zh: cbc69ea960cc647d
+/deepseek-ai-dsh-error-digest/model-experience/recent-tool-errors/kv-cache-effect:
+  en: 90d8fcd627050bb3
+  zh: 4bc0e998570e2bff
+/deepseek-ai-dsh-error-digest/known-limitations-and-deferred-work:
+  en: 7ac18c17d3d7e8e3
+  zh: b91579da9433a402
+/deepseek-ai-dsh-error-digest/known-limitations-and-deferred-work/dev-note:
+  en: 4f137bfdaf2fbf73
+  zh: 17323019be3fe272

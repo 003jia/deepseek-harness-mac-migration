@@ -1,0 +1,28 @@
+- id: headless-startup
+  disabled: true
+
+- id: headless-runner
+  disabled: true
+
+- id: agent-loop
+  config:
+    agents:
+      - id: main
+        provider: error-digest-mock
+        model: error-digest-mock
+        cwd: !!js process.cwd()
+
+- id: session-persistence-jsonl
+  config:
+    root: './.sessions'
+    compression: none
+
+- insert:
+    - id: error-digest-mock-llm
+      name: './mock-llm.ts'
+
+    - id: error-digest-mock-tool
+      name: './mock-tool.ts'
+
+    - id: error-digest
+      name: '@deepseek-ai/dsh-error-digest'

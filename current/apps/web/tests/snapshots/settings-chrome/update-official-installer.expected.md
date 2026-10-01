@@ -1,0 +1,21 @@
+- region "检查 DeepSeek Harness 更新":
+  - heading "检查 DeepSeek Harness 更新" [level=3]
+  - paragraph: 更新信息仅来自 DeepSeek Harness 官方发布
+  - button "重新检查":
+    - img
+    - text: 重新检查
+  - status:
+    - img
+    - paragraph: 发现新版本
+    - paragraph: 点击更新后会下载并打开官方安装包；安装步骤请按系统提示完成。
+  - term: 当前版本
+  - definition: 0.1.0-rc.8
+  - term: 官方最新版本
+  - definition: 0.1.7-alpha.1
+  - term: 发布时间
+  - definition: {{timestamp}}
+  - button "更新 DeepSeek Harness":
+    - img
+    - text: 更新 DeepSeek Harness
+  - link "查看官方发布":
+    - /url: https://github.com/deepseek-ai/deepseek-harness/releases/tag/dsh-v0.1.7-alpha.1

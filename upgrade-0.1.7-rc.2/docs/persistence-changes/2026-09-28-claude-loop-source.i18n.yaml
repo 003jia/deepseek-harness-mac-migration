@@ -1,0 +1,28 @@
+# Bilingual-pair consistency record for 2026-09-28-claude-loop-source.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write docs/persistence-changes/2026-09-28-claude-loop-source.md
+/:
+  en: 3d5a424ae7d7e46b
+  zh: c22a8e4a62d8cc1a
+/2026-09-28-claude-loop-source:
+  en: 36770f8b5b04f5aa
+  zh: 7bdcafeeaf865a93
+/2026-09-28-claude-loop-source/summary:
+  en: 2f57ae2594cd5fa3
+  zh: 4c39c7fc97626b18
+/2026-09-28-claude-loop-source/table-of-contents:
+  en: 6cf314a069ceb451
+  zh: 9adff678e9ecab3b
+/2026-09-28-claude-loop-source/declaration:
+  en: 6907136f28e48c90
+  zh: 02f8298485f3d8e7
+/2026-09-28-claude-loop-source/compatibility:
+  en: 3d26a49d108611bd
+  zh: af6415c673876d86
+/2026-09-28-claude-loop-source/verification:
+  en: 96b3a80a60070344
+  zh: afafdb9a1922a3f9
+/2026-09-28-claude-loop-source/dev-note:
+  en: b75c8458928b72b9
+  zh: 003ba4e17b4b5269

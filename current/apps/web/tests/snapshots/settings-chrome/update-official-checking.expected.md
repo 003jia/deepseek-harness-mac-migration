@@ -1,0 +1,11 @@
+- region "检查 DeepSeek Harness 更新":
+  - heading "检查 DeepSeek Harness 更新" [level=3]
+  - paragraph: 更新信息仅来自 DeepSeek Harness 官方发布
+  - button "检查中…" [disabled]:
+    - img
+    - text: 检查中…
+  - status:
+    - img
+    - paragraph: 正在检查官方发布
+    - paragraph: 正在与当前版本比较，请稍候。
+    - progressbar "版本检查进度"

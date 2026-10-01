@@ -1,0 +1,17 @@
+{
+  "extends": "../../../tsconfig.base.json",
+  "compilerOptions": { "rootDir": "src", "outDir": "lib/types" },
+  "include": ["src"],
+  "references": [
+    { "path": "../../../vendor/cordis" },
+    { "path": "../../util/brand" },
+    { "path": "../../typert/protocol" },
+    { "path": "../../runtime-diagnostics/invariants" },
+    { "path": "../../settings/settings" },
+    { "path": "../../credentials/credentials" },
+    { "path": "../../skill/skill-filesystem" },
+    { "path": "../../mcp/mcp-client" },
+    { "path": "../../subagent/subagent" },
+    { "path": "../../subagent/tool-subagent" }
+  ]
+}

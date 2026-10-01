@@ -1,0 +1,25 @@
+.entry {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--dsw-space-2);
+  min-height: 32px;
+  padding: var(--dsw-space-2);
+  border: 0;
+  border-radius: var(--dsw-radius-md);
+  background: transparent;
+  color: var(--dsw-color-text-secondary);
+  font-size: var(--dsw-font-size-sm);
+  cursor: pointer;
+}
+
+.entry:hover {
+  background: var(--dsw-color-bg-hover);
+  color: var(--dsw-color-text);
+}
+
+/* The remote-web-ui footer pairs its personal updater with remote access in
+   one row. Keep only remote access once this official action is registered. */
+:global([data-slot='sidebar.footer.action'] > div:has(> button[data-wide]) > button:not([data-wide])) {
+  display: none;
+}

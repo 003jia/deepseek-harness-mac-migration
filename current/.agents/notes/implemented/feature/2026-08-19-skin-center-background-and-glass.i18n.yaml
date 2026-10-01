@@ -1,0 +1,6 @@
+# Bilingual-pair consistency record (docs/i18n/README.md): the git blob hash of each
+# side as of the last confirmed-consistent state. Both languages carry equal authority;
+# after editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write .agents/notes/implemented/feature/2026-08-19-skin-center-background-and-glass.md
+2026-08-19-skin-center-background-and-glass.md: 69c39b3f90f1da7bd73e0dd4052bf741c88ab181
+2026-08-19-skin-center-background-and-glass.zh.md: 88e8bb3c1e93ca5438e574ac635b43bf563f8bf0

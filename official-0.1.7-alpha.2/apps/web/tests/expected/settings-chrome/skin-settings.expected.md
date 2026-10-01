@@ -1,0 +1,38 @@
+- dialog "设置":
+  - navigation:
+    - text: 设置
+    - button "通用设置"
+    - button "模型"
+    - button "内置插件"
+    - button "Agent 预设"
+    - button "技能"
+    - button "MCP"
+    - button "子智能体"
+    - button "皮肤中心"
+    - button "记忆"
+    - button "检查 DeepSeek Harness 更新"
+  - button "打开配置文件"
+  - button "关闭"
+  - heading "皮肤中心" [level=2]
+  - paragraph: 自定义背景动图与玻璃面板效果。
+  - heading "背景动图" [level=3]
+  - paragraph: 上传一张动图或图片作为整个界面的背景。
+  - checkbox "启用背景" [disabled]
+  - text: 启用背景 尚未选择背景图
+  - button "上传图片"
+  - text: 蒙版浓度
+  - slider "蒙版浓度" [disabled]: "35"
+  - text: 35% 背景模糊
+  - slider "背景模糊" [disabled]: "0"
+  - text: 0px 填充方式
+  - combobox "填充方式" [disabled]:
+    - option "铺满" [selected]
+    - option "完整显示"
+  - heading "玻璃效果" [level=3]
+  - paragraph: 调整三栏面板的磨砂玻璃观感，实时生效。
+  - text: 透明度
+  - slider "透明度": "85"
+  - text: 85% 模糊程度
+  - slider "模糊程度": "12"
+  - text: 12px
+  - button "恢复默认"

@@ -1,0 +1,43 @@
+# Bilingual-pair consistency record for README.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write packages/host/memory/README.md
+/:
+  en: 1a0f3e81920c14d9
+  zh: 3a51ef61aecccdfe
+/deepseek-ai-dsh-host-memory:
+  en: 67220024d59dbc9f
+  zh: 3040091e66b481b6
+/deepseek-ai-dsh-host-memory/summary:
+  en: 6fa349b145207300
+  zh: 52b63ecc0e09af41
+/deepseek-ai-dsh-host-memory/table-of-contents:
+  en: 274c04059510c111
+  zh: 2cb0024c32a21e7b
+/deepseek-ai-dsh-host-memory/details:
+  en: 931a4af3ab21fa23
+  zh: e0bebe49da388f71
+/deepseek-ai-dsh-host-memory/public-types:
+  en: 824cc72056b59b06
+  zh: d52f09456784dc06
+/deepseek-ai-dsh-host-memory/dev-note:
+  en: f3b2d1b297ee1387
+  zh: 21bb910dc6a18384
+/deepseek-ai-dsh-host-memory/model-experience:
+  en: 215e7ba838619b7b
+  zh: a311da3843709f90
+/deepseek-ai-dsh-host-memory/model-experience/automatic-extraction-and-recall:
+  en: d6254bd9ea7d25a5
+  zh: fbd8594c4ddcb5af
+/deepseek-ai-dsh-host-memory/model-experience/automatic-extraction-and-recall/what-the-model-sees:
+  en: 5cf1962b15173cd7
+  zh: f5e26e3f3ccc8e1c
+/deepseek-ai-dsh-host-memory/model-experience/automatic-extraction-and-recall/token-effect:
+  en: ae17ce4fffc022ac
+  zh: 9932ff68be5241a8
+/deepseek-ai-dsh-host-memory/model-experience/automatic-extraction-and-recall/kv-cache-effect:
+  en: 5afac0004e5976d1
+  zh: f1170bbcc418a554
+/deepseek-ai-dsh-host-memory/known-limitations-and-deferred-work:
+  en: 3ca7f89ab56bce2d
+  zh: dc8412fb097d50db

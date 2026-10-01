@@ -1,0 +1,72 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 720px;
+  color: var(--dsw-alias-label-primary);
+  font: var(--dsw-font-s-14);
+}
+
+.heading { margin: 0; font-size: 18px; line-height: 26px; font-weight: 600; }
+.description, .hint, .empty { margin: 0; color: var(--dsw-alias-label-secondary); line-height: 22px; }
+.hint, .status { font: var(--dsw-font-xs-13); }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid var(--dsw-alias-border-l2);
+  border-radius: 12px;
+}
+
+.form label { display: flex; flex-direction: column; gap: 6px; font-weight: 500; }
+.form input, .form textarea {
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid var(--dsw-alias-border-l2);
+  border-radius: 8px;
+  padding: 9px 10px;
+  background: var(--dsw-alias-bg-layer-1);
+  color: inherit;
+  font: inherit;
+}
+.form textarea { min-height: 190px; resize: vertical; font-family: var(--ds-font-family-code); font-size: 13px; }
+.form input:focus-visible, .form textarea:focus-visible,
+.actions button:focus-visible, .rowActions button:focus-visible {
+  outline: 2px solid var(--dsw-alias-brand-primary);
+  outline-offset: 2px;
+}
+
+.actions, .rowActions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.actions button, .rowActions button {
+  min-height: 34px;
+  border: 1px solid var(--dsw-alias-border-l2);
+  border-radius: 8px;
+  padding: 5px 12px;
+  background: var(--dsw-alias-bg-layer-1);
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+.actions button:hover:not(:disabled), .rowActions button:hover:not(:disabled) {
+  background: var(--dsw-alias-interactive-bg-hover);
+}
+.actions button:disabled, .rowActions button:disabled { opacity: 0.5; cursor: default; }
+
+.entries { display: flex; flex-direction: column; gap: 10px; margin: 0; padding: 0; list-style: none; }
+.entry { padding: 14px; border: 1px solid var(--dsw-alias-border-l2); border-radius: 12px; }
+.entryHeader { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: center; }
+.status { color: var(--dsw-alias-label-secondary); }
+.configPreview {
+  max-height: 160px;
+  overflow: auto;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  background: var(--dsw-alias-bg-layer-1);
+  font: 13px/20px var(--ds-font-family-code);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.error { color: var(--dsw-alias-label-error); }
